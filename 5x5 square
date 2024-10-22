@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class App
+    {
+        static void Main(string[] args)
+        {
+            // output: 
+            // *****
+            // *****
+            // *****
+            // *****
+            // *****
+            
+            int num = 5;
+            char value = '*';
+            for (int rows = 0; rows < num; rows++)
+            {
+                for (int j = 1; j < num; j++)
+                {
+                    Console.Write(value);
+                }
+                Console.WriteLine(value);
+            }
+        }
+    }
+}
