@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class App
+    {
+        static void Main(string[] args)
+        {
+            // output: 
+            // *
+            // **
+            // ***
+            // ****
+            // *****
+            // ******
+            // *******
+            // ********
+            // *********
+            // **********
+
+            char value = '*';
+            for (int rows = 0; rows < 10; rows += 1)
+            {
+                for (int col = 0; col < rows; col++)
+                {
+                    Console.Write(value);
+                }
+                Console.WriteLine(value);
+            }
+        }
+    }
+}
